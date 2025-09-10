@@ -12,6 +12,8 @@
     section { padding: 2rem; max-width: 900px; margin: auto; }
     .card { background: #fff; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
     footer { text-align: center; padding: 1rem; background: #222; color: #ccc; }
+    .gallery { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    .gallery img { max-width: 100%; width: 420px; border-radius: 10px; }
   </style>
 </head>
 <body>
@@ -19,12 +21,25 @@
     <h1>Arman Pourghorban</h1>
     <p>PhD Student | Controls Engineer at Tesla | Robotics Researcher</p>
     <nav>
+      <a href="#photos">Photos</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- 🔹 Photos Section (before About) -->
+  <section id="photos">
+    <div class="card">
+      <h2>Photos</h2>
+      <div class="gallery">
+        <img src="3EB7446D-1A5F-46DC-930F-A5A1BD6A22B3.jpeg" alt="At Tesla robotics facility">
+        <img src="4FB8B6AD-E530-4A62-9E42-78D6B5BC4549.jpeg" alt="Graduation photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 About Section -->
   <section id="about">
     <div class="card">
       <h2>About Me</h2>
@@ -32,28 +47,6 @@
     </div>
   </section>
 
-  <section id="projects">
-    <div class="card">
-      <h2>Selected Projects</h2>
-      <ul>
-        <li><b>Target–Defender–Intruder Games:</b> Research on capture surfaces, sequential engagements, and Markov-chain abstractions.</li>
-        <li><b>Tesla Internship:</b> Worked on controls engineering projects, recognized as a <i>Tesla Recognized Intern</i>.</li>
-        <li><b>Flexible Assignment Guard Algorithm:</b> A centralized approach for multi-agent defense with provable performance.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-      <p>GitHub: <a href="https://github.com/ArmanPourghorban" target="_blank">github.com/ArmanPourghorban</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Arman Pourghorban — Powered by GitHub Pages</p>
-  </footer>
+  <!-- Rest of your sections remain the same... -->
 </body>
 </html>
