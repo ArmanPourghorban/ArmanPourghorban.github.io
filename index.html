@@ -13,11 +13,11 @@
       --green:#138a36;
       --green-dark:#0f6e2b;
       --paper:#ffffff;
-      --ink:#141414;
+      --ink:#121317;
       --mute:#667085;
-      --bg:#fafafa;
+      --bg:#f8f9fb;
       --radius:16px;
-      --shadow:0 12px 28px rgba(16, 24, 40, .08);
+      --shadow:0 12px 28px rgba(16,24,40,.08);
       --max:1100px;
     }
     @media (prefers-color-scheme: dark){
@@ -43,7 +43,7 @@
     .topbar{
       position:sticky; top:0; z-index:50;
       backdrop-filter:saturate(1.2) blur(8px);
-      background:linear-gradient(180deg, rgba(250,250,250,.9), rgba(250,250,250,.7));
+      background:linear-gradient(180deg, rgba(250,250,250,.94), rgba(250,250,250,.72));
       border-bottom:1px solid rgba(0,0,0,.06);
     }
     @media (prefers-color-scheme: dark){
@@ -62,12 +62,12 @@
       background:
         radial-gradient(1000px 400px at 15% -10%, rgba(19,138,54,.18), transparent 60%),
         linear-gradient(135deg, var(--red), var(--red-dark));
-      color:#fff; padding:80px 0 70px;
+      color:#fff; padding:88px 0 74px;
     }
     .hero .container{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
-    .hero h1{margin:0 0 10px;font-weight:900;font-size:56px;line-height:1.1}
-    .hero p{margin:0 0 18px;color:#f6f7f9;font-size:18px}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .hero h1{margin:0 0 10px;font-weight:900;font-size:60px;line-height:1.08}
+    .hero p{margin:0 0 18px;color:#f4f6fa;font-size:18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
     .btn{
       display:inline-flex;align-items:center;gap:10px;
       padding:10px 16px;border-radius:999px;font-weight:700;border:1px solid transparent;
@@ -84,8 +84,8 @@
     .keylabel{font-size:.8rem;opacity:.9;margin-bottom:6px}
     .keyvalue{font-weight:700}
 
-    /* ====== Section / Card ====== */
-    section{padding:46px 0}
+    /* ====== Sections / Cards ====== */
+    section{padding:48px 0}
     .card{background:var(--paper);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}
     h2{margin:0 0 14px;color:var(--red)}
     .muted{color:var(--mute)}
@@ -96,7 +96,7 @@
     .img{width:100%;height:auto;border-radius:14px;border:4px solid rgba(19,138,54,.22)}
     figcaption{font-size:.92rem;color:var(--mute);margin-top:6px}
 
-    /* ====== Chips / Lists ====== */
+    /* ====== Lists / Chips ====== */
     .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
     .chip{border:1px solid rgba(19,138,54,.25);color:var(--green);background:rgba(19,138,54,.06);
       padding:6px 10px;border-radius:999px;font-size:.86rem}
@@ -126,6 +126,7 @@
       <div class="links">
         <a href="#photos">Photos</a>
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
         <a href="#honors">Honors</a>
@@ -152,9 +153,179 @@
           <div class="keyitem"><div class="keylabel">Current</div><div class="keyvalue">Tesla — Controls Engineer</div></div>
           <div class="keyitem"><div class="keylabel">Research</div><div class="keyvalue">UNC Charlotte — PhD</div></div>
           <div class="keyitem"><div class="keylabel">Focus</div><div class="keyvalue">Reinforcement Learning · Path Planning · Controls</div></div>
+          <div class="keyitem"><div class="keylabel">Links</div><div class="keyvalue"><a href="#publications" style="color:#fff;text-decoration:underline">Publications</a> · <a href="#projects" style="color:#fff;text-decoration:underline">Projects</a></div></div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- (Sections below remain unchanged: Photos, About, Projects, Publications, Honors, Service, Courses, Contact, Footer) -->
+  <!-- PHOTOS -->
+  <section id="photos">
+    <div class="container">
+      <div class="card">
+        <h2>Photos</h2>
+        <div class="gallery">
+          <figure>
+            <img class="img" src="3EB7446D-1A5F-46DC-930F-A5A1BD6A22B3.jpeg" alt="Arman in robotics facility">
+            <figcaption>On the floor with industrial robotics & motion systems.</figcaption>
+          </figure>
+          <figure>
+            <img class="img" src="4FB8B6AD-E530-4A62-9E42-78D6B5BC4549.jpeg" alt="Arman graduation">
+            <figcaption>Graduate studies at UNC Charlotte.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="card">
+        <h2>About</h2>
+        <p>I’m a controls and robotics engineer focused on model-predictive control, dynamics-aware trajectory optimization, and game-theoretic target defense for multi-agent systems. I enjoy translating rigorous theory into robust, testable software for real machines.</p>
+        <div class="chips" aria-label="Core skills">
+          <span class="chip">Reinforcement Learning</span>
+          <span class="chip">Path Planning</span>
+          <span class="chip">Model Predictive Control</span>
+          <span class="chip">Multi-Agent Systems</span>
+          <span class="chip">Optimization & Estimation</span>
+          <span class="chip">ROS • MATLAB • Python</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="card">
+        <h2>Education</h2>
+        <ul class="clean">
+          <li class="li">
+            <strong>Ph.D., Electrical & Computer Engineering (Control & Robotics)</strong> — University of North Carolina at Charlotte
+            <div class="muted">Research: target defense, multi-agent systems, MPC, trajectory optimization.</div>
+          </li>
+          <!-- If you want to add MS/BS, duplicate a block like this and edit: 
+          <li class="li">
+            <strong>M.S., [Your Field]</strong> — [University]
+            <div class="muted">Focus: [your focus/courses].</div>
+          </li>
+          <li class="li">
+            <strong>B.S., [Your Field]</strong> — [University]
+            <div class="muted">Honors/notes if any.</div>
+          </li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="card">
+        <h2>Selected Projects</h2>
+        <ul class="clean">
+          <li class="li"><strong>Target–Defender–Intruder Games</strong> — Engagement surfaces, capture analysis, and Markov-chain abstractions for sequential attacker arrivals.</li>
+          <li class="li"><strong>Trajectory Optimization for 6-DOF Robots</strong> — MPC and dynamics-aware path planning with verification and safety constraints.</li>
+          <li class="li"><strong>Flexible Assignment Guard</strong> — Centralized defender coordination vs. decentralized fixed-sector guards, with improved capture rates.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="container">
+      <div class="card">
+        <h2>Publications (Selected)</h2>
+        <ul class="clean">
+          <li class="li"><strong>Target defense against multiple arriving intruders</strong>, IEEE Transactions on Robotics, submitted 2024.</li>
+          <li class="li"><strong>Target defense in conical environments with sensing limitations</strong>, IEEE RA-Letters, submitted 2024.</li>
+          <li class="li"><strong>Consensus-based target defense with simultaneous attacker capture</strong>, IEEE Control Systems Letters, 2024.</li>
+          <li class="li"><strong>Target defense against periodically arriving intruders</strong>, American Control Conference (ACC) 2023.</li>
+        </ul>
+        <p class="muted">See more on <a target="_blank" rel="noreferrer" href="https://scholar.google.com/">Google Scholar</a> and <a target="_blank" rel="noreferrer" href="https://www.researchgate.net/">ResearchGate</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HONORS -->
+  <section id="honors">
+    <div class="container">
+      <div class="card">
+        <h2>Honors & Awards</h2>
+        <ul class="clean">
+          <li class="li"><strong>Best Student Research Award</strong> — DTS 2023.</li>
+          <li class="li"><strong>Conference Chair</strong> — ACC 2025, session “Control Applications II”.</li>
+          <li class="li"><strong>Recognized Intern</strong> — Tesla, Spring 2025.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE -->
+  <section id="service">
+    <div class="container">
+      <div class="card">
+        <h2>Service (Paper Reviews)</h2>
+        <ul class="clean">
+          <li class="li">Reviewer — IEEE Transactions on Robotics</li>
+          <li class="li">Reviewer — IEEE Control Systems Letters</li>
+          <li class="li">Reviewer — American Control Conference (ACC)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses">
+    <div class="container">
+      <div class="card">
+        <h2>Selected Graduate Courses</h2>
+        <ul class="clean">
+          <li class="li">Reinforcement Learning and Optimal Control (4/4)</li>
+          <li class="li">Real Analysis I · Linear Algebra · Applied Probability I (4/4)</li>
+          <li class="li">Machine Learning (4/4)</li>
+          <li class="li">Convex Optimization (4/4)</li>
+          <li class="li">Information Theory (4/4)</li>
+          <li class="li">Artificial Neural Network (4/4)</li>
+          <li class="li">Intelligent (Fuzzy) Control (4/4)</li>
+          <li class="li">Dynamic System Estimation (4/4)</li>
+          <li class="li">Robotics (4/4)</li>
+          <li class="li">Modern & Non-linear Control (4/4)</li>
+          <li class="li">Instrumentation (4/4)</li>
+          <li class="li">Mechatronics (4/4)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="card">
+        <h2>Contact</h2>
+        <ul class="clean">
+          <li class="li">Email: <a href="mailto:armanpour98@gmail.com">armanpour98@gmail.com</a></li>
+          <li class="li">LinkedIn: <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/arman-pourghorban-929132182">linkedin.com/in/arman-pourghorban-929132182</a></li>
+          <li class="li">GitHub: <a target="_blank" rel="noreferrer" href="https://github.com/ArmanPourghorban">github.com/ArmanPourghorban</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot">
+      <div class="footgrid">
+        <div class="small">© <span id="y"></span> Arman Pourghorban</div>
+        <div class="small">Built on GitHub Pages • Red × Green theme</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
