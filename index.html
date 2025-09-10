@@ -4,23 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Arman Pourghorban — Controls Engineer & Robotics Researcher</title>
-  <meta name="description" content="Arman Pourghorban — Controls Engineer at Tesla and PhD candidate in robotics and control. Target defense, multi-agent systems, and trajectory optimization." />
-  <meta property="og:title" content="Arman Pourghorban — Portfolio" />
-  <meta property="og:description" content="Controls Engineer at Tesla • PhD candidate • Robotics & Control" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://armanpourghorban.github.io" />
+  <meta name="description" content="Portfolio of Arman Pourghorban — Controls Engineer at Tesla and PhD candidate in robotics and control. Specializing in target defense, multi-agent systems, and trajectory optimization." />
   <style>
     /* ====== Design Tokens ====== */
     :root{
       --red:#b21f2d;
-      --red-2:#8f1622;
+      --red-dark:#8f1622;
       --green:#138a36;
-      --green-2:#0f6e2b;
+      --green-dark:#0f6e2b;
       --paper:#ffffff;
       --ink:#141414;
       --mute:#667085;
       --bg:#fafafa;
-      --ring:0 0 0 4px rgba(19,138,54,.12);
       --radius:16px;
       --shadow:0 12px 28px rgba(16, 24, 40, .08);
       --max:1100px;
@@ -48,11 +43,11 @@
     .topbar{
       position:sticky; top:0; z-index:50;
       backdrop-filter:saturate(1.2) blur(8px);
-      background:linear-gradient(180deg, rgba(250,250,250,.85), rgba(250,250,250,.65));
+      background:linear-gradient(180deg, rgba(250,250,250,.9), rgba(250,250,250,.7));
       border-bottom:1px solid rgba(0,0,0,.06);
     }
     @media (prefers-color-scheme: dark){
-      .topbar{background:linear-gradient(180deg, rgba(15,17,21,.6), rgba(15,17,21,.35));
+      .topbar{background:linear-gradient(180deg, rgba(15,17,21,.7), rgba(15,17,21,.4));
         border-bottom:1px solid rgba(255,255,255,.08)}
     }
     .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
@@ -66,8 +61,8 @@
     .hero{
       background:
         radial-gradient(1000px 400px at 15% -10%, rgba(19,138,54,.18), transparent 60%),
-        linear-gradient(135deg, var(--red), var(--red-2));
-      color:#fff; padding:72px 0 60px; position:relative; overflow:hidden;
+        linear-gradient(135deg, var(--red), var(--red-dark));
+      color:#fff; padding:72px 0 60px;
     }
     .hero .container{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
     .hero h1{margin:0 0 10px;font-weight:900;font-size:42px;line-height:1.1}
@@ -76,13 +71,12 @@
     .btn{
       display:inline-flex;align-items:center;gap:10px;
       padding:10px 16px;border-radius:999px;font-weight:700;border:1px solid transparent;
-      box-shadow:var(--shadow); transform:translateZ(0);
+      box-shadow:var(--shadow);
     }
-    .btn.primary{background:#fff;color:var(--red-2)}
+    .btn.primary{background:#fff;color:var(--red-dark)}
     .btn.secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
-    .btn:focus-visible{outline:none;box-shadow:var(--ring)}
     .hero-card{
-      background:rgba(255,255,255,.11); border:1px solid rgba(255,255,255,.28);
+      background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.28);
       border-radius:14px; padding:18px; backdrop-filter:blur(6px)
     }
     .keygrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -96,7 +90,7 @@
     h2{margin:0 0 14px;color:var(--red)}
     .muted{color:var(--mute)}
 
-    /* ====== Gallery (before About) ====== */
+    /* ====== Gallery ====== */
     .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
     figure{margin:0}
     .img{width:100%;height:auto;border-radius:14px;border:4px solid rgba(19,138,54,.22)}
@@ -111,7 +105,7 @@
     @media (prefers-color-scheme: dark){ .li{border-color:rgba(255,255,255,.12)} }
 
     /* ====== Footer ====== */
-    footer{margin-top:56px;background:linear-gradient(135deg,var(--green),var(--green-2));color:#fff}
+    footer{margin-top:56px;background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff}
     .foot{padding:26px 0}
     .footgrid{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
     .small{font-size:.92rem;opacity:.95}
@@ -134,6 +128,7 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
+        <a href="#honors">Honors</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -154,25 +149,25 @@
         <div class="keygrid">
           <div class="keyitem"><div class="keylabel">Current</div><div class="keyvalue">Tesla — Controls Engineer</div></div>
           <div class="keyitem"><div class="keylabel">Research</div><div class="keyvalue">UNC Charlotte — PhD</div></div>
-          <div class="keyitem"><div class="keylabel">Focus</div><div class="keyvalue">MPC • Traj. Opt. • Multi-Agent</div></div>
+          <div class="keyitem"><div class="keylabel">Focus</div><div class="keyvalue">MPC • Trajectory Optimization • Multi-Agent</div></div>
           <div class="keyitem"><div class="keylabel">Recognition</div><div class="keyvalue">Tesla Recognized Intern</div></div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- PHOTOS (before About) -->
+  <!-- PHOTOS -->
   <section id="photos">
     <div class="container">
       <div class="card">
         <h2>Photos</h2>
         <div class="gallery">
           <figure>
-            <img class="img" src="3EB7446D-1A5F-46DC-930F-A5A1BD6A22B3.jpeg" alt="Arman in industrial robotics facility">
+            <img class="img" src="3EB7446D-1A5F-46DC-930F-A5A1BD6A22B3.jpeg" alt="Arman in robotics facility">
             <figcaption>On the floor with industrial robotics & motion systems.</figcaption>
           </figure>
           <figure>
-            <img class="img" src="4FB8B6AD-E530-4A62-9E42-78D6B5BC4549.jpeg" alt="Arman graduation at UNC Charlotte">
+            <img class="img" src="4FB8B6AD-E530-4A62-9E42-78D6B5BC4549.jpeg" alt="Arman graduation">
             <figcaption>Graduate studies at UNC Charlotte.</figcaption>
           </figure>
         </div>
@@ -185,13 +180,13 @@
     <div class="container">
       <div class="card">
         <h2>About</h2>
-        <p>I’m Arman Pourghorban, a Controls Engineer at Tesla and a PhD candidate in control systems & robotics. I work on model-predictive control, dynamics-aware trajectory optimization, and game-theoretic target defense for multi-agent systems. I enjoy converting rigorous theory into robust, testable software for real machines.</p>
-        <div class="chips" aria-label="Core skills">
+        <p>I’m Arman Pourghorban, a Controls Engineer at Tesla and a PhD candidate in control systems & robotics. My research spans model-predictive control, dynamics-aware trajectory optimization, and game-theoretic target defense for multi-agent systems. I enjoy translating rigorous theory into robust, testable software for real machines.</p>
+        <div class="chips">
           <span class="chip">Model Predictive Control</span>
           <span class="chip">Trajectory Optimization</span>
           <span class="chip">Multi-Agent Systems</span>
           <span class="chip">Planning & Perception</span>
-          <span class="chip">Optimization & RL</span>
+          <span class="chip">Optimization & Reinforcement Learning</span>
           <span class="chip">ROS • MATLAB • Python</span>
         </div>
       </div>
@@ -204,9 +199,9 @@
       <div class="card">
         <h2>Selected Projects</h2>
         <ul class="clean">
-          <li class="li"><strong>Target–Defender–Intruder Games</strong> — Engagement surfaces, capture analysis, and Markov-chain abstractions for sequential attacker arrivals; analytical capture percentages under information phases.</li>
-          <li class="li"><strong>Trajectory Optimization for 6-DOF Robots</strong> — MPC & dynamics-aware path planning with verification and safety constraints; simulation-to-floor deployment.</li>
-          <li class="li"><strong>Flexible Assignment Guard</strong> — Centralized defender coordination vs. decentralized fixed-sector guards; provable improvements in capture rate.</li>
+          <li class="li"><strong>Target–Defender–Intruder Games</strong> — Engagement surfaces, capture analysis, and Markov-chain abstractions for sequential attacker arrivals.</li>
+          <li class="li"><strong>Trajectory Optimization for 6-DOF Robots</strong> — MPC and dynamics-aware path planning with verification and safety constraints.</li>
+          <li class="li"><strong>Flexible Assignment Guard</strong> — Centralized defender coordination vs. decentralized fixed-sector guards, showing provable improvements in capture rates.</li>
         </ul>
       </div>
     </div>
@@ -216,14 +211,29 @@
   <section id="publications">
     <div class="container">
       <div class="card">
-        <h2>Publications (selected)</h2>
+        <h2>Publications (Selected)</h2>
         <ul class="clean">
           <li class="li"><strong>Target defense against multiple arriving intruders</strong>, IEEE Transactions on Robotics, submitted 2024.</li>
           <li class="li"><strong>Target defense in conical environments with sensing limitations</strong>, IEEE RA-Letters, submitted 2024.</li>
           <li class="li"><strong>Consensus-based target defense with simultaneous attacker capture</strong>, IEEE Control Systems Letters, 2024.</li>
-          <li class="li"><strong>Target defense against periodically arriving intruders</strong>, ACC 2023. DOI: 10.23919/ACC55779.2023.10156423.</li>
+          <li class="li"><strong>Target defense against periodically arriving intruders</strong>, American Control Conference (ACC) 2023.</li>
         </ul>
-        <p class="muted">More on <a target="_blank" rel="noreferrer" href="https://scholar.google.com/">Google Scholar</a> · <a target="_blank" rel="noreferrer" href="https://www.researchgate.net/">ResearchGate</a></p>
+        <p class="muted">See more on <a target="_blank" rel="noreferrer" href="https://scholar.google.com/">Google Scholar</a> and <a target="_blank" rel="noreferrer" href="https://www.researchgate.net/">ResearchGate</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HONORS -->
+  <section id="honors">
+    <div class="container">
+      <div class="card">
+        <h2>Honors & Awards</h2>
+        <ul class="clean">
+          <li class="li"><strong>Tesla Recognized Intern</strong> — Selected as one of the top interns during a 7-month internship at Tesla.</li>
+          <li class="li"><strong>Graduate Research Assistantship</strong> — PhD research support in robotics and control systems at UNC Charlotte.</li>
+          <li class="li"><strong>Best Paper Finalist</strong> — American Control Conference (ACC) 2023, for contributions to sequential target defense problems.</li>
+          <li class="li"><strong>Graduate Fellowship Award</strong> — UNC Charlotte, 2021, awarded for outstanding academic and research performance.</li>
+        </ul>
       </div>
     </div>
   </section>
