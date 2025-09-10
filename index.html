@@ -1,3 +1,59 @@
-git add .
-git commit -m "Initial portfolio page"
-git push origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arman Pourghorban - Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+    header { background: #222; color: #fff; padding: 2rem; text-align: center; }
+    header h1 { margin: 0; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    section { padding: 2rem; max-width: 900px; margin: auto; }
+    .card { background: #fff; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    footer { text-align: center; padding: 1rem; background: #222; color: #ccc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arman Pourghorban</h1>
+    <p>PhD Student | Controls Engineer at Tesla | Robotics Researcher</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hello! I’m Arman, a PhD student working on advanced robotics and game-theoretic defense problems, and a Controls Engineer at Tesla. I enjoy solving complex problems at the intersection of robotics, optimization, and control systems.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2>Selected Projects</h2>
+      <ul>
+        <li><b>Target–Defender–Intruder Games:</b> Research on capture surfaces, sequential engagements, and Markov-chain abstractions.</li>
+        <li><b>Tesla Internship:</b> Worked on controls engineering projects, recognized as a <i>Tesla Recognized Intern</i>.</li>
+        <li><b>Flexible Assignment Guard Algorithm:</b> A centralized approach for multi-agent defense with provable performance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/ArmanPourghorban" target="_blank">github.com/ArmanPourghorban</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Arman Pourghorban — Powered by GitHub Pages</p>
+  </footer>
+</body>
+</html>
